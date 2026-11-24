@@ -907,16 +907,19 @@ body.cv-open {
 
   .project__media--logo {
     border-radius: 0;
-    min-height: 0;
+    height: 220px;
+    min-height: 220px;
     display: block;
+    overflow: hidden;
     background: var(--x5-mint);
   }
 
   .project__logo {
     width: 100%;
-    height: auto;
-    aspect-ratio: 1360 / 480;
+    height: 220px;
+    aspect-ratio: auto;
     object-fit: cover;
+    object-position: center;
   }
 
   .gallery,
