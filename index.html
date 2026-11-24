@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ксения Афанасьева — продуктовый дизайнер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=hide-cv" />
+  <script defer src="script.js?v=hide-cv"></script>
+</head>
+<body>
+  <a class="skip-link" href="#projects">К проектам</a>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <div class="header-identity-slot">
+        <div class="header-identity">
+          <p class="header-identity__name">
+            Ксения Афанасьева<br />
+            Продуктовый дизайнер
+          </p>
+          <button type="button" class="btn-text" data-open-cv aria-haspopup="dialog" aria-controls="cv-dialog" hidden>
+            Открыть CV
+          </button>
+        </div>
+      </div>
+
+      <div class="header-contacts">
+        <p class="header-location">
+          Россия, Ростов-на-Дону<br />
+          Удалённо
+        </p>
+        <div class="header-contacts__row">
+          <p class="header-contacts__labels">
+            Почта:<br />
+            TG:<br />
+            Тел:
+          </p>
+          <p class="header-contacts__values">
+            <a class="btn-text" href="mailto:kfedorovaa@yandex.ru">kfedorovaa@yandex.ru</a><br />
+            <a class="btn-text" href="https://t.me/xfedorovaa" target="_blank" rel="noopener noreferrer">@xfedorovaa</a><br />
+            <a class="btn-text" href="tel:+79184126704">+7 918 412 67 04</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="header-employment">
+        <div class="header-employment__labels">
+          <p>Сейчас:</p>
+          <p>До этого:</p>
+        </div>
+        <div class="header-employment__values">
+          <p>Фриланс</p>
+          <p>
+            <a class="btn-text" href="https://ony.ru/" target="_blank" rel="noopener noreferrer">ONY</a><br />
+            <a class="btn-text" href="https://x5.tech/" target="_blank" rel="noopener noreferrer">X5 — аутстафф</a><br />
+            <a class="btn-text" href="https://pinkman.ru/" target="_blank" rel="noopener noreferrer">Пинкман</a><br />
+            <a class="btn-text" href="https://incetro.ru/" target="_blank" rel="noopener noreferrer">Incetro</a><br />
+            <a class="btn-text" href="https://webium.ru/" target="_blank" rel="noopener noreferrer">Вебиум</a><br />
+            <a class="btn-text" href="https://umschool.net/" target="_blank" rel="noopener noreferrer">Умскул</a><br />
+            <a class="btn-text" href="https://marksteam.ru/" target="_blank" rel="noopener noreferrer">Маркс</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <div class="projects__head">
+        <h1 id="projects-heading" class="projects__title">Проектики</h1>
+        <p class="projects__count" aria-label="Всего проектов: 6">(6)</p>
+      </div>
+
+      <ul class="projects__list">
+        <!-- X5 CRM -->
+        <li class="project" data-project>
+          <div class="project__top">
+            <div class="project__meta">
+              <h2 class="project__name">X5 CRM B2E</h2>
+              <p class="project__year">2026</p>
+              <p class="project__type">Product design</p>
+              <button type="button" class="btn-details" data-toggle-details aria-expanded="false">
+                <span data-details-label>Подробнее</span>
+                <img src="assets/icons/plus.svg" alt="" width="20" height="20" data-details-icon />
+              </button>
+            </div>
+
+            <div class="project__details" data-details>
+              <div class="project__details-collapse">
+                <div class="project__details-grid">
+                  <p class="project__year project__year--detail">2026</p>
+                  <div class="project__team" aria-hidden="true"></div>
+                  <div class="project__about">
+                    <div class="project__row">
+                      <h3>Задача</h3>
+                      <p>Развивать внутренний продукт X5, через который сотрудники розничной сети ставят задачи и подают заявки.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Роль</h3>
+                      <p>Продуктовый дизайнер в команде X5, аутстафф от ONY, 5 месяцев. Вела задачи по продукту: проектировала новые сценарии, делала новые компоненты в готовой дизайн-системе, обновляла старые макеты под новую функциональность.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Ключевой сценарий — оформление сотрудников</h3>
+                      <ul class="project__bullets">
+                        <li>Новый сценарий трудового оформления по ТК, отдельно для граждан РФ и иностранцев. Готовые смены под роли (склад, магазин, розница) сняли основную ручную работу с тех, кто нанимает.</li>
+                        <li>Самостоятельное оформление для новых сотрудников: человек сам заполняет данные и прикладывает документы.</li>
+                        <li>Сценарий разбит на смысловые шаги с упрощённым выбором графика: сотрудник указывает пожелания по сменам, руководитель видит их при согласовании заявки.</li>
+                      </ul>
+                    </div>
+                    <div class="project__row">
+                      <h3>Другие сценарии</h3>
+                      <ul class="project__bullets">
+                        <li>Проверка заявок и работа с документами.</li>
+                        <li>Оформление отсутствий и обмен сменами.</li>
+                        <li>Сложные компоненты интерфейса, включая таблицы, для сотрудников и руководителей.</li>
+                      </ul>
+                    </div>
+                    <div class="project__row">
+                      <h3>Результат</h3>
+                      <p>Обновлённый сценарий оформления сотрудников запущен в продукте. Сотрудники могут указывать пожелания по рабочему графику, а руководители — видеть их при рассмотрении заявки.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figure class="project__media project__media--logo">
+            <img class="project__logo" src="assets/projects/x5-crm/logo.jpg" alt="Логотип X5" width="1360" height="480" />
+          </figure>
+        </li>
+
+        <!-- Snow Queen -->
+        <li class="project" data-project>
+          <div class="project__top">
+            <div class="project__meta">
+              <h2 class="project__name">
+                Снежная королева<br />
+                в рамках
+                <a href="https://ony.ru/" target="_blank" rel="noopener noreferrer">ONY</a>
+              </h2>
+              <p class="project__year">2026</p>
+              <p class="project__type">UX/ UI, product design</p>
+              <button type="button" class="btn-details" data-toggle-details aria-expanded="false">
+                <span data-details-label>Подробнее</span>
+                <img src="assets/icons/plus.svg" alt="" width="20" height="20" data-details-icon />
+              </button>
+            </div>
+            <div class="project__details" data-details>
+              <div class="project__details-collapse">
+                <div class="project__details-grid">
+                  <p class="project__year project__year--detail">2026</p>
+                  <div class="project__team">
+                    <p>Арт-директор:<br />Александр Бородин</p>
+                    <p>
+                      Дизайнеры:<br />
+                      Анна Шестакевич<br />
+                      Дарья Кондратенко<br />
+                      Ксения Афанасьева<br />
+                      Сергей Бреус<br />
+                      Игорь Кранга
+                    </p>
+                  </div>
+                  <div class="project__about">
+                    <div class="project__row">
+                      <h3>Задача</h3>
+                      <p>Обновить дизайн интернет-магазина и приложения под новый бренд, сохранить сложную бизнес-логику и сделать понятным то, что путало покупателей.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Роль</h3>
+                      <p>Дизайнер в команде из 4 человек. Полностью делала прототипы, личный кабинет, часть карточки товара и несколько внешних страниц. Также генерация изображений, подготовка макетов к вёрстке и сопровождение после запуска.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Объём</h3>
+                      <p>29 страниц, веб и приложение за 2 месяца.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Что изменили</h3>
+                      <ul class="project__bullets">
+                        <li>Бронирование с примеркой в магазине через час</li>
+                        <li>Упростили оформление заказа</li>
+                        <li>Понятнее программа лояльности</li>
+                        <li>Личный кабинет разбит по смысловым блокам</li>
+                        <li>Новое: отзывы и оценки в карточке, сториз товаров — мини-коллекции из 5–10 вещей и др.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery" aria-label="Галерея проекта Снежная королева">
+            <div class="gallery__track">
+              <img class="gallery__item" src="assets/projects/snow-queen/preview.jpg" alt="" width="399" height="600" loading="lazy" style="--w:399;--h:600" />
+              <img class="gallery__item" src="assets/projects/snow-queen/block.jpg" alt="" width="835" height="460" loading="lazy" style="--w:835;--h:460" />
+              <div class="gallery__stack" style="--w:273;--h:600">
+                <img src="assets/projects/snow-queen/product-01.jpg" alt="" width="273" height="375" loading="lazy" />
+                <img src="assets/projects/snow-queen/product-02.jpg" alt="" width="273" height="225" loading="lazy" />
+              </div>
+              <img class="gallery__item" src="assets/projects/snow-queen/photo.jpg" alt="" width="327" height="500" loading="lazy" style="--w:327;--h:500" />
+              <img class="gallery__item" src="assets/projects/snow-queen/main.jpg" alt="" width="708" height="500" loading="lazy" style="--w:708;--h:500" />
+              <img class="gallery__item" src="assets/projects/snow-queen/product-01.jpg" alt="" width="273" height="600" loading="lazy" style="--w:273;--h:600" />
+              <img class="gallery__item" src="assets/projects/snow-queen/mannequin.jpg" alt="" width="306" height="460" loading="lazy" style="--w:306;--h:460" />
+              <img class="gallery__item" src="assets/projects/snow-queen/product-02.jpg" alt="" width="274" height="600" loading="lazy" style="--w:274;--h:600" />
+            </div>
+          </div>
+        </li>
+
+        <!-- RECAST -->
+        <li class="project" data-project>
+          <div class="project__top">
+            <div class="project__meta">
+              <h2 class="project__name">RECAST</h2>
+              <p class="project__year">2025</p>
+              <p class="project__type">UX/ UI</p>
+              <button type="button" class="btn-details" data-toggle-details aria-expanded="false">
+                <span data-details-label>Подробнее</span>
+                <img src="assets/icons/plus.svg" alt="" width="20" height="20" data-details-icon />
+              </button>
+            </div>
+            <div class="project__details" data-details>
+              <div class="project__details-collapse">
+                <div class="project__details-grid">
+                  <p class="project__year project__year--detail">2025</p>
+                  <div class="project__team">
+                    <p>Арт-директор:<br />Богдан Чернышев</p>
+                    <p>Дизайнер:<br />Ксения Афанасьева</p>
+                  </div>
+                  <div class="project__about">
+                    <div class="project__row">
+                      <h3>Задача</h3>
+                      <p>Придумать бренд одежды из переработанных материалов и его интернет-магазин. Метафора: маркировка пластика (HDPE2, PP5) становится языком бренда и навигации.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Роль</h3>
+                      <p>Весь проект: концепция, айдентика, дизайн интернет-магазина, генеративный фото- и видеостиль.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Инструменты</h3>
+                      <p>Midjourney, ChatGPT, Krea, Sora.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery" aria-label="Галерея проекта RECAST">
+            <div class="gallery__track">
+              <img class="gallery__item" src="assets/projects/recast/group-01.jpg" alt="" width="846" height="500" loading="lazy" style="--w:846;--h:500" />
+              <img class="gallery__item" src="assets/projects/recast/main-01.jpg" alt="" width="450" height="400" loading="lazy" style="--w:450;--h:400" />
+              <img class="gallery__item" src="assets/projects/recast/main-02.jpg" alt="" width="779" height="500" loading="lazy" style="--w:779;--h:500" />
+              <img class="gallery__item" src="assets/projects/recast/group-02.jpg" alt="" width="421" height="600" loading="lazy" style="--w:421;--h:600" />
+              <img class="gallery__item" src="assets/projects/recast/catalog.jpg" alt="" width="604" height="500" loading="lazy" style="--w:604;--h:500" decoding="async" />
+              <img class="gallery__item" src="assets/projects/recast/main-03.jpg" alt="" width="699" height="400" loading="lazy" style="--w:699;--h:400" />
+            </div>
+          </div>
+        </li>
+
+        <!-- NOY -->
+        <li class="project" data-project>
+          <div class="project__top">
+            <div class="project__meta">
+              <h2 class="project__name">NOY</h2>
+              <p class="project__year">2025</p>
+              <p class="project__type">UX/ UI</p>
+              <button type="button" class="btn-details" data-toggle-details aria-expanded="false">
+                <span data-details-label>Подробнее</span>
+                <img src="assets/icons/plus.svg" alt="" width="20" height="20" data-details-icon />
+              </button>
+            </div>
+            <div class="project__details" data-details>
+              <div class="project__details-collapse">
+                <div class="project__details-grid">
+                  <p class="project__year project__year--detail">2025</p>
+                  <div class="project__team">
+                    <p>Арт-директор:<br />Богдан Чернышев</p>
+                    <p>Дизайнер:<br />Ксения Афанасьева</p>
+                  </div>
+                  <div class="project__about">
+                    <div class="project__row">
+                      <h3>Задача</h3>
+                      <p>Провести редизайн фирменного стиля и сайта бренда «НОЯ». Необходимо было переосмыслить визуальный язык, чтобы подчеркнуть атмосферу роскоши и эксклюзивности, а также передать богатый культурный колорит Армении.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Идея</h3>
+                      <p>Концепция вдохновлена многовековым наследием и природным величием Армении. Визуальный язык построен на контрасте благородной сдержанности и декоративных элементов, отсылающих к национальным орнаментам и фактурам камня. Акцент сделан на создании ощущения «тихой роскоши», где премиальность раскрывается через детали, а не через избыточность.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Роль</h3>
+                      <p>Самостоятельно разработала концепцию проекта, дизайн интернет-магазина, а также генеративный фото- и видеостиль.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery" aria-label="Галерея проекта NOY">
+            <div class="gallery__track">
+              <img class="gallery__item" src="assets/projects/noy/group-01.jpg" alt="" width="901" height="500" loading="lazy" style="--w:901;--h:500" />
+              <img class="gallery__item" src="assets/projects/noy/preview.jpg" alt="" width="422" height="600" loading="lazy" style="--w:422;--h:600" />
+              <img class="gallery__item" src="assets/projects/noy/product-01.jpg" alt="" width="273" height="600" loading="lazy" style="--w:273;--h:600" />
+              <img class="gallery__item" src="assets/projects/noy/group-03.jpg" alt="" width="901" height="526" loading="lazy" style="--w:901;--h:526" />
+              <img class="gallery__item" src="assets/projects/noy/product-02.jpg" alt="" width="273" height="600" loading="lazy" style="--w:273;--h:600" />
+              <img class="gallery__item" src="assets/projects/noy/preview.jpg" alt="" width="387" height="405" loading="lazy" style="--w:387;--h:405" />
+              <img class="gallery__item" src="assets/projects/noy/block.jpg?v=4" alt="" width="901" height="577" loading="lazy" style="--w:901;--h:577" decoding="async" />
+              <img class="gallery__item" src="assets/projects/noy/product-03.jpg" alt="" width="273" height="600" loading="lazy" style="--w:273;--h:600" />
+            </div>
+          </div>
+        </li>
+
+        <!-- X5 HR -->
+        <li class="project" data-project>
+          <div class="project__top">
+            <div class="project__meta">
+              <h2 class="project__name">
+                X5 HR портал<br />
+                в рамках
+                <a href="https://ony.ru/" target="_blank" rel="noopener noreferrer">ONY</a>
+              </h2>
+              <p class="project__year">2025</p>
+              <p class="project__type">UX/ UI</p>
+              <button type="button" class="btn-details" data-toggle-details aria-expanded="false">
+                <span data-details-label>Подробнее</span>
+                <img src="assets/icons/plus.svg" alt="" width="20" height="20" data-details-icon />
+              </button>
+            </div>
+            <div class="project__details" data-details>
+              <div class="project__details-collapse">
+                <div class="project__details-grid">
+                  <p class="project__year project__year--detail">2025</p>
+                  <div class="project__team">
+                    <p>Арт-директор:<br />Артём Леонтьев</p>
+                    <p>
+                      Дизайнеры:<br />
+                      Ксения Афанасьева<br />
+                      Игорь Кранга
+                    </p>
+                  </div>
+                  <div class="project__about">
+                    <div class="project__row">
+                      <h3>Задача</h3>
+                      <p>Сделать карьерный портал холдинга, который помогает кандидату найти вакансию по городу и направлению и привлекает через мероприятия.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Роль</h3>
+                      <p>Дизайнер в команде. Делала прототипы и дизайн страниц по новому бренду, генерацию изображений, подготовку макетов к вёрстке.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Результат</h3>
+                      <p>Написала гайд по работе с библиотекой компонентов и свод правил по типографике, шрифтам, композиции и использованию компонентов. По этим правилам команда X5 собирает коммуникационные лендинги без участия агентства.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery" aria-label="Галерея проекта X5 HR Portal">
+            <div class="gallery__track">
+              <img class="gallery__item" src="assets/projects/x5-hr/block.jpg" alt="" width="846" height="500" loading="lazy" style="--w:846;--h:500" />
+              <img class="gallery__item" src="assets/projects/x5-hr/main.jpg" alt="" width="355" height="316" loading="lazy" style="--w:355;--h:316" />
+              <img class="gallery__item" src="assets/projects/x5-hr/group-01.jpg" alt="" width="422" height="600" loading="lazy" style="--w:422;--h:600" />
+              <img class="gallery__item" src="assets/projects/x5-hr/group-02.jpg" alt="" width="848" height="500" loading="lazy" style="--w:848;--h:500" />
+            </div>
+          </div>
+        </li>
+
+        <!-- Bastion -->
+        <li class="project" data-project>
+          <div class="project__top">
+            <div class="project__meta">
+              <h2 class="project__name">
+                Бастион<br />
+                в рамках
+                <a href="https://ony.ru/" target="_blank" rel="noopener noreferrer">ONY</a>
+              </h2>
+              <p class="project__year">2024</p>
+              <p class="project__type">UX/ UI</p>
+              <button type="button" class="btn-details" data-toggle-details aria-expanded="false">
+                <span data-details-label>Подробнее</span>
+                <img src="assets/icons/plus.svg" alt="" width="20" height="20" data-details-icon />
+              </button>
+            </div>
+            <div class="project__details" data-details>
+              <div class="project__details-collapse">
+                <div class="project__details-grid">
+                  <p class="project__year project__year--detail">2024</p>
+                  <div class="project__team">
+                    <p>Арт-директор:<br />Георгий Кустов</p>
+                    <p>
+                      Дизайнеры:<br />
+                      Ксения Афанасьева<br />
+                      Сергей Бреус
+                    </p>
+                  </div>
+                  <div class="project__about">
+                    <div class="project__row">
+                      <h3>Задача</h3>
+                      <p>Редизайн корпоративного сайта компании по информационной безопасности под новый бренд: услуги, проекты, карьера, медиа.</p>
+                    </div>
+                    <div class="project__row">
+                      <h3>Роль</h3>
+                      <p>Дизайнер в команде. Делала прототипы, дизайн страниц, адаптивы 768/375, генерацию изображений, готовила макеты к вёрстке.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery gallery--bastion" aria-label="Галерея проекта Бастион">
+            <div class="gallery__track">
+              <img class="gallery__item" src="assets/projects/bastion/preview-01.jpg" alt="" width="286" height="316" loading="lazy" style="--w:286;--h:316" />
+              <img class="gallery__item" src="assets/projects/bastion/block.jpg" alt="" width="740" height="560" loading="lazy" style="--w:740;--h:560" />
+              <img class="gallery__item" src="assets/projects/bastion/preview-02.jpg" alt="" width="796" height="447" loading="lazy" style="--w:796;--h:447" />
+              <img class="gallery__item" src="assets/projects/bastion/preview-03.jpg" alt="" width="366" height="316" loading="lazy" style="--w:366;--h:316" />
+              <img class="gallery__item" src="assets/projects/bastion/preview-04.jpg" alt="" width="796" height="447" loading="lazy" style="--w:796;--h:447" />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- CV dialog -->
+  <div class="cv-overlay" id="cv-dialog" role="dialog" aria-modal="true" aria-labelledby="cv-title" hidden>
+    <div class="cv-overlay__backdrop" data-close-cv tabindex="-1"></div>
+    <div class="cv-dialog" role="document">
+      <button type="button" class="cv-dialog__close" data-close-cv aria-label="Закрыть CV">
+        <img src="assets/icons/close.svg" alt="" width="20" height="20" />
+      </button>
+
+      <div class="cv-dialog__paper">
+        <div class="cv-page cv-page--left">
+          <aside class="cv-sidebar">
+            <div class="cv-photo">
+              <img class="cv-photo__clip" src="assets/icons/paperclip.svg" alt="" width="28" height="48" />
+              <div class="cv-photo__frame">
+                <img src="assets/cv/portrait.jpg" alt="Портрет Ксении Афанасьевой" width="134" height="155" />
+              </div>
+            </div>
+            <p class="cv-sidebar__role">Продуктовый дизайнер</p>
+            <p class="cv-sidebar__summary">Опыт более 3 лет в UX/UI. Проектирую веб- и мобильные интерфейсы для e-commerce, B2E и B2B-продуктов</p>
+            <p class="cv-sidebar__location">Ростов-на-Дону, Россия<br />Удаленно</p>
+          </aside>
+
+          <div class="cv-col cv-col--left">
+            <h2 id="cv-title" class="cv-name">Ксения Афанасьева</h2>
+            <div class="cv-block cv-block--contacts">
+              <p><span class="cv-label">TG: </span><a href="https://t.me/xfedorovaa" target="_blank" rel="noopener noreferrer">@xfedorovaa</a></p>
+              <p><span class="cv-label">Email: </span><a href="mailto:kfedorovaa@yandex.ru">kfedorovaa@yandex.ru</a></p>
+              <p><span class="cv-label">Тел: </span><a href="tel:+79184126704">+7 918 412 67 04</a></p>
+            </div>
+            <div class="cv-block cv-block--education">
+              <p class="cv-section-label">Образование</p>
+              <p>Высшее (2019 — 2023)</p>
+              <p>Южный федеральный университет (ЮФУ), Высшая школа бизнеса, направление «Туризм»</p>
+            </div>
+            <div class="cv-block cv-block--skills">
+              <p class="cv-section-label">Навыки</p>
+              <p>Продуктовый, UX/UI, подготовка к разработке: Пользовательские сценарии, прототипирование, веб- и мобильные интерфейсы, e-commerce, B2E, B2B, CRM, работа с результатами исследований, дизайн-системы. Auto Layout, компоненты, варианты, библиотеки, Variables, токены, адаптивный дизайн, Dev Mode.</p>
+            </div>
+            <div class="cv-block cv-block--tools">
+              <p class="cv-section-label">Инструменты</p>
+              <p>Figma, FigJam, Miro, Adobe Photoshop, Adobe Illustrator, Claude Code, Cursor, Figma MCP, ChatGPT, Gemini, Perplexity, Midjourney, Krea, Reve, Weavy, Sora, Runway, Jira, Confluence, Notion.</p>
+            </div>
+            <div class="cv-block cv-block--languages">
+              <p class="cv-section-label">Языки</p>
+              <p>Английский — B2<br />Испанский — A2</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="cv-experience-label">Опыт</p>
+
+        <div class="cv-page cv-page--right">
+          <div class="cv-col cv-col--right">
+            <article class="cv-job">
+              <div class="cv-job__meta">
+                <p class="cv-job__company">ONY</p>
+                <p class="cv-job__role">Middle Digital-дизайнер, UX/UI и продуктовые проекты</p>
+                <p class="cv-job__dates">Январь 2024 —<br />Ноябрь 2026</p>
+              </div>
+              <ul class="cv-job__list">
+                <li>Проектировала пользовательские сценарии, веб- и мобильные интерфейсы, интерактивные прототипы.</li>
+                <li>Создавала и развивала компоненты и дизайн-системы в Figma, готовила макеты к разработке и сопровождала реализацию.</li>
+                <li>В составе команды дизайнеров работала над редизайном интернет-магазина и мобильного приложения Снежной Королевы. Также отвечала за прототипы, личный кабинет, самостоятельно проектировала мобильное приложение. Проектировала бронирование товаров для примерки, оформление заказа и возвраты; готовила макеты к разработке и сопровождала реализацию.</li>
+                <li>Проектировала страницы карьерного портала X5 HR и готовила макеты к разработке. Также разработала гайд по библиотеке компонентов, типографике, композиции и сборке страниц. Команда X5 использует его для самостоятельной сборки коммуникационных лендингов.</li>
+              </ul>
+            </article>
+
+            <article class="cv-job">
+              <div class="cv-job__meta">
+                <p class="cv-job__company">X5</p>
+                <p class="cv-job__role">Продуктовый дизайнер<br />на аутстаффе в ONY</p>
+                <p class="cv-job__dates">Октябрь 2025 —<br />Февраль 2026</p>
+              </div>
+              <ul class="cv-job__list">
+                <li>Проектировала сценарии внутренней CRM для сотрудников и руководителей, собирала сложные компоненты, включая таблицы.</li>
+                <li>На основе результатов исследований переработала многошаговую заявку на трудоустройство: разделила её на смысловые шаги и упростила выбор графика. Обновлённый сценарий запущен в продукте: сотрудник указывает пожелания по сменам, руководитель видит их при согласовании заявки.</li>
+                <li>Подготовила прототипы для исследований.</li>
+                <li>Проектировала дополнительные сценарии проверки заявок, отсутствий, обмена сменами и работы с документами.</li>
+              </ul>
+            </article>
+
+            <article class="cv-job">
+              <div class="cv-job__meta">
+                <p class="cv-job__company">Пинкман</p>
+                <p class="cv-job__role">UX/UI-дизайнер</p>
+                <p class="cv-job__dates">Август —<br />Декабрь 2023</p>
+              </div>
+              <ul class="cv-job__list">
+                <li>Проектировала веб-страницы и интерфейсы в рамках существующих дизайн-систем.</li>
+                <li>Создавала недостающие компоненты, адаптировала макеты под разные разрешения и готовила их к передаче в разработку.</li>
+              </ul>
+            </article>
+
+            <article class="cv-job">
+              <div class="cv-job__meta">
+                <p class="cv-job__company">Вебиум</p>
+                <p class="cv-job__role">Коммуникационный<br />дизайнер</p>
+                <p class="cv-job__dates">Август 2019 —<br />Август 2023</p>
+              </div>
+              <ul class="cv-job__list">
+                <li>Создавала визуальные материалы для социальных сетей, email-рассылок и рекламных кампаний.</li>
+                <li>Поддерживала единый визуальный стиль онлайн-школы в разных каналах коммуникации.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
