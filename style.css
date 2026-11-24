@@ -356,6 +356,16 @@ button[data-open-cv] {
   gap: 8px;
 }
 
+.project__prose {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project__lead {
+  font-weight: 400;
+}
+
 .project__bullets li {
   position: relative;
   padding-left: 26px;
@@ -778,33 +788,42 @@ body.cv-open {
   }
 
   .projects {
-    padding-top: 200px;
+    padding-top: 215px;
     padding-bottom: 48px;
   }
 
   .projects__head {
     display: grid;
-    grid-template-columns: 157px minmax(0, 1fr);
+    grid-template-columns: 88px minmax(0, 1fr);
     gap: 0 12px;
-    margin-bottom: 130px;
+    margin-bottom: 145px;
+    align-items: baseline;
+  }
+
+  .projects__title {
+    grid-column: 1;
+    width: max-content;
+    white-space: nowrap;
   }
 
   .projects__count {
+    grid-column: 2;
     justify-self: start;
   }
 
   .project__meta {
-    grid-template-columns: 157px minmax(0, 1fr);
+    grid-template-columns: calc(197px - var(--pad)) minmax(0, 1fr);
     grid-template-areas:
       "name type"
-      "btn type";
-    gap: 8px 12px;
+      "name btn";
+    column-gap: 0;
+    row-gap: 8px;
     align-items: start;
   }
 
   .project__name {
     grid-area: name;
-    max-width: 157px;
+    max-width: 200px;
   }
 
   .project__year {
@@ -815,6 +834,7 @@ body.cv-open {
     grid-area: type;
     text-align: left;
     justify-self: start;
+    width: max-content;
   }
 
   .btn-details,
@@ -822,6 +842,7 @@ body.cv-open {
     grid-area: btn;
     justify-self: start;
     align-self: start;
+    width: max-content;
     color: var(--text-strong);
     opacity: 1;
   }
@@ -837,38 +858,47 @@ body.cv-open {
   }
 
   .project__details.is-open {
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   .project__details-grid,
   .project__details-grid--solo {
     display: grid;
-    grid-template-columns: 80px minmax(0, 1fr);
-    grid-template-areas:
-      "year team"
-      "about about";
-    gap: 20px 16px;
+    grid-template-columns: calc(197px - var(--pad)) minmax(0, 1fr);
+    column-gap: 0;
+    row-gap: 40px;
   }
 
   .project__year--detail {
     display: block;
-    grid-area: year;
+    grid-column: 1;
+    grid-row: 1;
     margin: 0;
+    padding-left: 88px;
   }
 
   .project__team {
-    grid-area: team;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: start;
+    text-align: left;
     order: unset;
   }
 
   .project__about {
-    grid-area: about;
-    gap: 28px;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    gap: 40px;
+    max-width: none;
   }
 
   .project__row {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 12px;
+  }
+
+  .project__row h3 {
+    padding-left: 88px;
   }
 
   .project__top {
