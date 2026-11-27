@@ -271,6 +271,10 @@ button[data-open-cv] {
   text-decoration: underline;
 }
 
+.project__name-at {
+  display: inline;
+}
+
 .btn-details {
   display: inline-flex;
   align-items: center;
@@ -824,6 +828,10 @@ body.cv-open {
   .project__name {
     grid-area: name;
     max-width: 200px;
+  }
+
+  .project__name-at {
+    display: block;
   }
 
   .project__year {
