@@ -59,7 +59,7 @@
     details.classList.toggle("is-open", open);
     project.classList.toggle("is-expanded", open);
     btn.setAttribute("aria-expanded", String(open));
-    if (label) label.textContent = open ? "Скрыть" : "Подробнее";
+    if (label) label.textContent = open ? "Hide" : "Details";
     if (icon) {
       icon.src = open ? "assets/icons/minus.svg" : "assets/icons/plus.svg";
     }
