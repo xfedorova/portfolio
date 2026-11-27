@@ -1,7 +1,9 @@
 (() => {
   const header = document.querySelector("[data-header]");
+  const headerInner = document.querySelector(".site-header__inner");
   const identitySlot = document.querySelector(".header-identity-slot");
   const identity = document.querySelector(".header-identity");
+  const langSwitch = document.querySelector(".lang-switch");
   const openCvBtn = document.querySelector("[data-open-cv]");
   const cvDialog = document.querySelector("#cv-dialog");
   const closeCvControls = document.querySelectorAll("[data-close-cv]");
@@ -20,6 +22,10 @@
     identity.style.width = "";
     identity.style.left = "";
     if (identitySlot) identitySlot.style.height = "";
+    if (langSwitch) {
+      langSwitch.classList.remove("is-fixed");
+      langSwitch.style.right = "";
+    }
   }
 
   function measureIdentity() {
@@ -43,6 +49,11 @@
       identity.style.left = `${identityLeft}px`;
       identity.classList.add("is-fixed");
       header.classList.add("is-sticky");
+      if (langSwitch && headerInner) {
+        const right = Math.max(window.innerWidth - headerInner.getBoundingClientRect().right, 0);
+        langSwitch.style.right = `${right}px`;
+        langSwitch.classList.add("is-fixed");
+      }
     } else if (!shouldFix && identity.classList.contains("is-fixed")) {
       clearFixedIdentity();
     }
@@ -59,7 +70,9 @@
     details.classList.toggle("is-open", open);
     project.classList.toggle("is-expanded", open);
     btn.setAttribute("aria-expanded", String(open));
-    if (label) label.textContent = open ? "Hide" : "Details";
+    const moreLabel = document.documentElement.dataset.detailsMore || "Подробнее";
+    const lessLabel = document.documentElement.dataset.detailsLess || "Скрыть";
+    if (label) label.textContent = open ? lessLabel : moreLabel;
     if (icon) {
       icon.src = open ? "assets/icons/minus.svg" : "assets/icons/plus.svg";
     }
