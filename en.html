@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=en-3" />
+  <link rel="stylesheet" href="style.css?v=en-4" />
   <script defer src="script.js?v=en-3"></script>
 </head>
 <body>
@@ -147,17 +147,44 @@
           </div>
           <div class="gallery" aria-label="Snow Queen gallery">
             <div class="gallery__track">
-              <img class="gallery__item" src="assets/en/snow-queen/preview.jpg" alt="" width="399" height="600" loading="lazy" style="--w:399;--h:600" />
-              <img class="gallery__item" src="assets/en/snow-queen/block.jpg" alt="" width="835" height="460" loading="lazy" style="--w:835;--h:460" />
+              <picture class="gallery__item" style="--w:399;--h:600">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/snow-queen/preview.jpg" />
+                <img src="assets/en/snow-queen/preview.jpg" alt="" width="399" height="600" loading="lazy" />
+              </picture>
+              <picture class="gallery__item" style="--w:835;--h:460">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/snow-queen/block.jpg" />
+                <img src="assets/en/snow-queen/block.jpg" alt="" width="835" height="460" loading="lazy" />
+              </picture>
               <div class="gallery__stack" style="--w:273;--h:600">
-                <img src="assets/en/snow-queen/product-01.jpg" alt="" width="273" height="375" loading="lazy" />
-                <img src="assets/en/snow-queen/product-02.jpg" alt="" width="273" height="225" loading="lazy" />
+                <picture>
+                  <source media="(max-width: 900px)" srcset="assets/en/mobile/snow-queen/product-01.jpg" />
+                  <img src="assets/en/snow-queen/product-01.jpg" alt="" width="273" height="375" loading="lazy" />
+                </picture>
+                <picture>
+                  <source media="(max-width: 900px)" srcset="assets/en/mobile/snow-queen/product-02.jpg" />
+                  <img src="assets/en/snow-queen/product-02.jpg" alt="" width="273" height="225" loading="lazy" />
+                </picture>
               </div>
-              <img class="gallery__item" src="assets/en/snow-queen/photo.jpg" alt="" width="327" height="500" loading="lazy" style="--w:327;--h:500" />
-              <img class="gallery__item" src="assets/en/snow-queen/main.jpg" alt="" width="708" height="500" loading="lazy" style="--w:708;--h:500" />
-              <img class="gallery__item" src="assets/en/snow-queen/product-01.jpg" alt="" width="273" height="600" loading="lazy" style="--w:273;--h:600" />
-              <img class="gallery__item" src="assets/en/snow-queen/mannequin.jpg" alt="" width="306" height="460" loading="lazy" style="--w:306;--h:460" />
-              <img class="gallery__item" src="assets/en/snow-queen/product-02.jpg" alt="" width="274" height="600" loading="lazy" style="--w:274;--h:600" />
+              <picture class="gallery__item" style="--w:327;--h:500">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/snow-queen/photo.jpg" />
+                <img src="assets/en/snow-queen/photo.jpg" alt="" width="327" height="500" loading="lazy" />
+              </picture>
+              <picture class="gallery__item" style="--w:708;--h:500">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/snow-queen/main.jpg" />
+                <img src="assets/en/snow-queen/main.jpg" alt="" width="708" height="500" loading="lazy" />
+              </picture>
+              <picture class="gallery__item" style="--w:273;--h:600">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/snow-queen/product-01.jpg" />
+                <img src="assets/en/snow-queen/product-01.jpg" alt="" width="273" height="600" loading="lazy" />
+              </picture>
+              <picture class="gallery__item" style="--w:306;--h:460">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/snow-queen/mannequin.jpg" />
+                <img src="assets/en/snow-queen/mannequin.jpg" alt="" width="306" height="460" loading="lazy" />
+              </picture>
+              <picture class="gallery__item" style="--w:274;--h:600">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/snow-queen/product-02.jpg" />
+                <img src="assets/en/snow-queen/product-02.jpg" alt="" width="274" height="600" loading="lazy" />
+              </picture>
             </div>
           </div>
         </li>
@@ -320,14 +347,32 @@
           </div>
           <div class="gallery" aria-label="NOY gallery">
             <div class="gallery__track">
-              <img class="gallery__item" src="assets/en/noy/group-01.jpg" alt="" width="901" height="500" loading="lazy" style="--w:901;--h:500" />
+              <picture class="gallery__item" style="--w:901;--h:500">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/noy/group-01.jpg" />
+                <img src="assets/en/noy/group-01.jpg" alt="" width="901" height="500" loading="lazy" />
+              </picture>
               <img class="gallery__item" src="assets/en/noy/preview.jpg" alt="" width="422" height="600" loading="lazy" style="--w:422;--h:600" />
-              <img class="gallery__item" src="assets/projects/noy/product-01.jpg" alt="" width="273" height="600" loading="lazy" style="--w:273;--h:600" />
-              <img class="gallery__item" src="assets/projects/noy/group-03.jpg" alt="" width="901" height="526" loading="lazy" style="--w:901;--h:526" />
-              <img class="gallery__item" src="assets/projects/noy/product-02.jpg" alt="" width="273" height="600" loading="lazy" style="--w:273;--h:600" />
+              <picture class="gallery__item" style="--w:273;--h:600">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/noy/product-01.jpg" />
+                <img src="assets/projects/noy/product-01.jpg" alt="" width="273" height="600" loading="lazy" />
+              </picture>
+              <picture class="gallery__item" style="--w:901;--h:526">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/noy/group-03.jpg" />
+                <img src="assets/projects/noy/group-03.jpg" alt="" width="901" height="526" loading="lazy" />
+              </picture>
+              <picture class="gallery__item" style="--w:273;--h:600">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/noy/product-02.jpg" />
+                <img src="assets/projects/noy/product-02.jpg" alt="" width="273" height="600" loading="lazy" />
+              </picture>
               <img class="gallery__item" src="assets/en/noy/preview.jpg" alt="" width="387" height="405" loading="lazy" style="--w:387;--h:405" />
-              <img class="gallery__item" src="assets/en/noy/block.jpg" alt="" width="901" height="577" loading="lazy" style="--w:901;--h:577" decoding="async" />
-              <img class="gallery__item" src="assets/projects/noy/product-03.jpg" alt="" width="273" height="600" loading="lazy" style="--w:273;--h:600" />
+              <picture class="gallery__item" style="--w:901;--h:577">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/noy/block.jpg" />
+                <img src="assets/en/noy/block.jpg" alt="" width="901" height="577" loading="lazy" decoding="async" />
+              </picture>
+              <picture class="gallery__item" style="--w:273;--h:600">
+                <source media="(max-width: 900px)" srcset="assets/en/mobile/noy/product-03.jpg" />
+                <img src="assets/projects/noy/product-03.jpg" alt="" width="273" height="600" loading="lazy" />
+              </picture>
             </div>
           </div>
         </li>

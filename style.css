@@ -493,6 +493,31 @@ button[data-open-cv] {
   max-width: none;
 }
 
+picture.gallery__item {
+  display: block;
+}
+
+picture.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery__stack picture {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.gallery__stack picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* CV overlay */
 
 .cv-overlay {
